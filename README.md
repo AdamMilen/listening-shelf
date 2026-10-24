@@ -1,4 +1,5 @@
 # The Listening Shelf
+https://adammilen.github.io/listening-shelf/
 
 A reconstructed, dependency-free home vinyl catalog for GitHub Pages. Includes all ten albums recovered from the original ChatGPT conversation, mobile layouts, artist/album/song search, genre filtering, and expandable tracklists.
 
