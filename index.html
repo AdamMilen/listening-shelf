@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The Listening Shelf — a home vinyl collection. Find your next record.">
+  <title>The Listening Shelf · Vinyl Collection</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header><a class="brand" href="./">The Listening Shelf<span>HOME RECORD COLLECTION / VOL. 01</span></a><span class="stamp">33⅓<br>RPM</span></header>
+  <main>
+    <section class="intro"><p class="eyebrow">GOOD COMPANY. GREAT RECORDS.</p><h1>Pull up a chair.<br>Put a record on.</h1><p>Ten albums, a turntable, and nowhere else to be.<br>Browse the shelf and choose the soundtrack.</p><a class="browse" href="#collection">Dig through the crates ↓</a><div class="record" aria-hidden="true"><span>THE<br>LISTENING<br>SHELF</span></div></section>
+    <section id="collection" aria-labelledby="collection-title">
+      <div class="section-head"><h2 id="collection-title">The collection</h2><span>CURATED AT HOME · PLAYED WITH LOVE</span></div>
+      <div class="tools"><label for="search">Find a record<input id="search" type="search" placeholder="Search artist, album, or song…" autocomplete="off"></label><label for="genre">Genre<select id="genre"><option value="all">All genres</option></select></label></div>
+      <p id="count" role="status" aria-live="polite"></p>
+      <div id="albums" class="grid"></div>
+      <p id="empty" hidden>No records found. Try another artist, song, or genre.</p>
+      <noscript><p>Please enable JavaScript to browse the ten records and their tracklists.</p></noscript>
+    </section>
+  </main>
+  <footer><strong>The Listening Shelf</strong><p>Pick a record. Ask your host. Enjoy the whole side.</p><span>A SMALL COLLECTION. A LOT OF SOUL.</span></footer>
+</body>
+</html>
