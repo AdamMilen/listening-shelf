@@ -1,40 +1,12 @@
 # The Listening Shelf
+https://adammilen.github.io/listening-shelf/
 
-A reconstructed, dependency-free home vinyl catalog for GitHub Pages. Includes all ten albums recovered from the original ChatGPT conversation, mobile layouts, artist/album/song search, genre filtering, and expandable tracklists.
+Home vinyl catalog for GitHub Pages. Includes all ten albums recovered from the original ChatGPT conversation, mobile layouts, artist/album/song search, genre filtering, and expandable tracklists.
 
 ## Open locally
 
 Open `index.html` in a browser. All assets are local; no installation, API key, build, fonts, or network requests are required.
 
-## Publish on GitHub Pages
-
-1. Extract this ZIP. Upload all extracted contents, including the `assets` folder, to the root of your GitHub repository.
-2. In the repository, open **Settings → Pages**. Under **Build and deployment**, select **Deploy from a branch**, choose `main` and `/(root)`, and save.
-3. Wait for GitHub Pages to finish deploying. Use the published URL shown in Settings → Pages (usually `https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/`).
-4. Create your guest QR code using that final published URL. Scan it on a phone to verify the destination before printing.
-
-Relative asset paths support both project Pages and a custom domain. No server configuration is needed.
-
 ## Update the collection
 
 Edit the `albums` array in `script.js`. Each entry has artist, title, original release year, genre, a local cover image path, a track array, and `sideCounts` (the number of tracks per side, in A/B/C/D order). Optional `format` and `note` fields describe an edition. Genres and the collection count update automatically.
-
-## Reconstruction notes
-
-The original `/mnt/data/vinyl-record-store` and `/mnt/data/listening-shelf-github-pages.zip` were unavailable in this Windows session. This is a newly reconstructed export, not a byte-for-byte copy of the previous website. The original conversation supplied the ten album titles but did not expose the prior generated files or design. The current minimal design uses locally bundled album artwork retrieved from Apple’s album catalog. Image provenance is recorded in `cover-sources.json`; artwork may differ from the exact vinyl pressing. Album artwork belongs to its respective rights holders. Artist spelling is normalized to Billy Joel and Masayoshi Takanaka.
-
-Tracklists use standard album sequences, without bonus tracks. The Eagles entry assumes the 19-track 2024 **2LP** edition, not the 51-track 6LP set. Side breaks follow standard single-LP releases, the Eagles 19-track 2LP, and The Rainbow Goblins 2LP. Exact pressings are not verified; compare with your physical sleeves. Each side restarts track numbering at 1. Double LPs label both the record number and side letter.
-
-Edition references consulted during reconstruction:
-- Eagles 2LP tracklist: https://towerrecords.ie/collections/music-vinyl/products/the-eagles-to-the-limit-the-essential-collection
-- The Rainbow Goblins vinyl tracklist: https://whitenoiserecords.org/products/高中正義-masayoshi-takanaka-虹伝説-the-rainbow-goblins-1
-
-## Verification
-
-The export was checked for the required root files and ten local cover images, relative local asset references, JavaScript syntax, ten album records with nonempty tracklists, and ZIP integrity with byte-for-byte comparison to the source. Browser visual testing was not performed.
-
-Side-break references:
-- https://www.pinkfloyd.com/albums/wish-you-were-here/
-- https://shop.sonymusic.ca/products/foo-fighters-but-here-we-are-black-vinyl
-- https://www.cdwarehouse.com.hk/en/products/eagles-to-the-limit-the-essential-collection-2lp
-- https://viewrecordshop.com/product/高中正義-masayoshi-takanaka-虹伝説-the-rainbow-goblins-2lp/
