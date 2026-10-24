@@ -1,16 +1,16 @@
 "use strict";
 // Edit the collection here. Tracklists describe standard releases unless noted.
 const albums = [
-  {artist:"Bob Dylan",title:"Nashville Skyline",cover:"assets/nashville-skyline.jpg",year:1969,genre:"Country / Folk",color:"#4a7181",tracks:["Girl from the North Country (with Johnny Cash)","Nashville Skyline Rag","To Be Alone with You","I Threw It All Away","Peggy Day","Lay Lady Lay","One More Night","Tell Me That It Isn't True","Country Pie","Tonight I'll Be Staying Here with You"]},
-  {artist:"John Coltrane",title:"A Love Supreme",cover:"assets/a-love-supreme.jpg",year:1965,genre:"Jazz",color:"#353b38",tracks:["Part I – Acknowledgement","Part II – Resolution","Part III – Pursuance","Part IV – Psalm"]},
-  {artist:"Billy Joel",title:"The Stranger",cover:"assets/the-stranger.jpg",year:1977,genre:"Pop / Rock",color:"#6c635b",tracks:["Movin' Out (Anthony's Song)","The Stranger","Just the Way You Are","Scenes from an Italian Restaurant","Vienna","Only the Good Die Young","She's Always a Woman","Get It Right the First Time","Everybody Has a Dream"]},
-  {artist:"Pink Floyd",title:"Wish You Were Here",cover:"assets/wish-you-were-here.jpg",year:1975,genre:"Progressive Rock",color:"#577073",tracks:["Shine On You Crazy Diamond (Parts I–V)","Welcome to the Machine","Have a Cigar","Wish You Were Here","Shine On You Crazy Diamond (Parts VI–IX)"]},
-  {artist:"The Beatles",title:"Abbey Road",cover:"assets/abbey-road.jpg",year:1969,genre:"Rock",color:"#626947",tracks:["Come Together","Something","Maxwell's Silver Hammer","Oh! Darling","Octopus's Garden","I Want You (She's So Heavy)","Here Comes the Sun","Because","You Never Give Me Your Money","Sun King","Mean Mr. Mustard","Polythene Pam","She Came In Through the Bathroom Window","Golden Slumbers","Carry That Weight","The End","Her Majesty"]},
-  {artist:"The Doors",title:"The Doors",cover:"assets/the-doors.jpg",year:1967,genre:"Psychedelic Rock",color:"#8b4e2e",tracks:["Break On Through (To the Other Side)","Soul Kitchen","The Crystal Ship","Twentieth Century Fox","Alabama Song (Whisky Bar)","Light My Fire","Back Door Man","I Looked at You","End of the Night","Take It as It Comes","The End"]},
-  {artist:"Foo Fighters",title:"But Here We Are",cover:"assets/but-here-we-are.jpg",year:2023,genre:"Alternative Rock",color:"#817e71",tracks:["Rescued","Under You","Hearing Voices","But Here We Are","The Glass","Nothing at All","Show Me How","Beyond Me","The Teacher","Rest"]},
-  {artist:"Eagles",title:"To the Limit: The Essential Collection",cover:"assets/to-the-limit.jpg",year:2024,genre:"Rock",color:"#9c6635",format:"2LP",note:"19-track 2LP edition assumed from your collection list; check against your sleeve.",tracks:["Take It Easy","Peaceful Easy Feeling","Witchy Woman","Desperado","Tequila Sunrise","The Best of My Love","Lyin' Eyes","One of These Nights","Take It to the Limit","Life in the Fast Lane","New Kid in Town","I Can't Tell You Why","Heartache Tonight","Love Will Keep Us Alive (Hell Freezes Over)","How Long","Hotel California (Live at the Forum '76)","Already Gone (Live at the Forum '76)","In the City (Hell Freezes Over)","The Long Run (Live from the Forum MMXVIII)"]},
-  {artist:"Led Zeppelin",title:"IV",cover:"assets/led-zeppelin-iv.jpg",year:1971,genre:"Hard Rock",color:"#66533a",format:"Remaster",tracks:["Black Dog","Rock and Roll","The Battle of Evermore","Stairway to Heaven","Misty Mountain Hop","Four Sticks","Going to California","When the Levee Breaks"]},
-  {artist:"Masayoshi Takanaka",title:"The Rainbow Goblins",cover:"assets/the-rainbow-goblins.jpg",year:1981,genre:"Jazz Fusion",color:"#59766c",tracks:["Prologue","Once Upon a Song","Seven Goblins","The Sunset Valley","The Moon Rose","Soon","Magical Night Light","Rainbow Paradise","Thunderstorm","Rising Arch","Just Chuckle","Rainbow Was Reborn","Plumed Bird","You Can Never Come to This Place"]}
+  {artist:"Bob Dylan",title:"Nashville Skyline",sideCounts:[5,5],cover:"assets/nashville-skyline.jpg",year:1969,genre:"Country / Folk",color:"#4a7181",tracks:["Girl from the North Country (with Johnny Cash)","Nashville Skyline Rag","To Be Alone with You","I Threw It All Away","Peggy Day","Lay Lady Lay","One More Night","Tell Me That It Isn't True","Country Pie","Tonight I'll Be Staying Here with You"]},
+  {artist:"John Coltrane",title:"A Love Supreme",sideCounts:[2,2],cover:"assets/a-love-supreme.jpg",year:1965,genre:"Jazz",color:"#353b38",tracks:["Part I – Acknowledgement","Part II – Resolution","Part III – Pursuance","Part IV – Psalm"]},
+  {artist:"Billy Joel",title:"The Stranger",sideCounts:[4,5],cover:"assets/the-stranger.jpg",year:1977,genre:"Pop / Rock",color:"#6c635b",tracks:["Movin' Out (Anthony's Song)","The Stranger","Just the Way You Are","Scenes from an Italian Restaurant","Vienna","Only the Good Die Young","She's Always a Woman","Get It Right the First Time","Everybody Has a Dream"]},
+  {artist:"Pink Floyd",title:"Wish You Were Here",sideCounts:[2,3],cover:"assets/wish-you-were-here.jpg",year:1975,genre:"Progressive Rock",color:"#577073",tracks:["Shine On You Crazy Diamond (Parts I–V)","Welcome to the Machine","Have a Cigar","Wish You Were Here","Shine On You Crazy Diamond (Parts VI–IX)"]},
+  {artist:"The Beatles",title:"Abbey Road",sideCounts:[6,11],cover:"assets/abbey-road.jpg",year:1969,genre:"Rock",color:"#626947",tracks:["Come Together","Something","Maxwell's Silver Hammer","Oh! Darling","Octopus's Garden","I Want You (She's So Heavy)","Here Comes the Sun","Because","You Never Give Me Your Money","Sun King","Mean Mr. Mustard","Polythene Pam","She Came In Through the Bathroom Window","Golden Slumbers","Carry That Weight","The End","Her Majesty"]},
+  {artist:"The Doors",title:"The Doors",sideCounts:[6,5],cover:"assets/the-doors.jpg",year:1967,genre:"Psychedelic Rock",color:"#8b4e2e",tracks:["Break On Through (To the Other Side)","Soul Kitchen","The Crystal Ship","Twentieth Century Fox","Alabama Song (Whisky Bar)","Light My Fire","Back Door Man","I Looked at You","End of the Night","Take It as It Comes","The End"]},
+  {artist:"Foo Fighters",title:"But Here We Are",sideCounts:[6,4],cover:"assets/but-here-we-are.jpg",year:2023,genre:"Alternative Rock",color:"#817e71",tracks:["Rescued","Under You","Hearing Voices","But Here We Are","The Glass","Nothing at All","Show Me How","Beyond Me","The Teacher","Rest"]},
+  {artist:"Eagles",title:"To the Limit: The Essential Collection",sideCounts:[6,4,5,4],cover:"assets/to-the-limit.jpg",year:2024,genre:"Rock",color:"#9c6635",format:"2LP",note:"19-track 2LP edition assumed from your collection list; check against your sleeve.",tracks:["Take It Easy","Peaceful Easy Feeling","Witchy Woman","Desperado","Tequila Sunrise","The Best of My Love","Lyin' Eyes","One of These Nights","Take It to the Limit","Life in the Fast Lane","New Kid in Town","I Can't Tell You Why","Heartache Tonight","Love Will Keep Us Alive (Hell Freezes Over)","How Long","Hotel California (Live at the Forum '76)","Already Gone (Live at the Forum '76)","In the City (Hell Freezes Over)","The Long Run (Live from the Forum MMXVIII)"]},
+  {artist:"Led Zeppelin",title:"IV",sideCounts:[4,4],cover:"assets/led-zeppelin-iv.jpg",year:1971,genre:"Hard Rock",color:"#66533a",format:"Remaster",tracks:["Black Dog","Rock and Roll","The Battle of Evermore","Stairway to Heaven","Misty Mountain Hop","Four Sticks","Going to California","When the Levee Breaks"]},
+  {artist:"Masayoshi Takanaka",title:"The Rainbow Goblins",sideCounts:[4,4,4,2],cover:"assets/the-rainbow-goblins.jpg",year:1981,genre:"Jazz Fusion",color:"#59766c",tracks:["Prologue","Once Upon a Song","Seven Goblins","The Sunset Valley","The Moon Rose","Soon","Magical Night Light","Rainbow Paradise","Thunderstorm","Rising Arch","Just Chuckle","Rainbow Was Reborn","Plumed Bird","You Can Never Come to This Place"]}
 ];
 const search = document.querySelector("#search");
 const genre = document.querySelector("#genre");
@@ -40,7 +40,19 @@ function render() {
     info.append(element("h3", album.title), element("p", album.artist, "artist"), element("p", `${album.year} / ${album.genre}${album.format ? ` / ${album.format}` : ""}`, "meta"));
     const details = element("details"); details.append(element("summary", `Tracklist · ${album.tracks.length} tracks`));
     if (album.note) details.append(element("p", album.note, "edition"));
-    const list = element("ol"); album.tracks.forEach(track => list.append(element("li", track))); details.append(list); info.append(details); card.append(sleeve, info); grid.append(card);
+    let offset = 0;
+    album.sideCounts.forEach((count, index) => {
+      const side = element("section", null, "vinyl-side");
+      const label = `Side ${String.fromCharCode(65 + index)}`;
+      const heading = element("h4", album.sideCounts.length > 2 ? `Record ${Math.floor(index / 2) + 1} · ${label}` : label);
+      const list = element("ol");
+      list.setAttribute("aria-label", label);
+      album.tracks.slice(offset, offset + count).forEach(track => list.append(element("li", track)));
+      offset += count;
+      side.append(heading, list);
+      details.append(side);
+    });
+    info.append(details); card.append(sleeve, info); grid.append(card);
   });
   document.querySelector("#count").textContent = `${visible.length} of ${albums.length} records on the shelf`;
   document.querySelector("#empty").hidden = visible.length !== 0;
